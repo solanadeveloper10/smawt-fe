@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
-import styles from './styles.module.scss'
+
+// import styles from './styles.module.scss'
 
 interface IChatModal {
   isOpen: boolean
@@ -7,11 +8,14 @@ interface IChatModal {
 }
 
 const ChatModal: React.FC<IChatModal> = ({ isOpen, onClose }) => {
-  const iframeRef = useRef(null);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
 
   useEffect(() => {
     if (isOpen && iframeRef.current) {
+      // @ts-expect - error
       const iframeDoc = iframeRef.current.contentDocument;
+
+      if (!iframeDoc) return
 
       // Inject HTML content
       iframeDoc.body.innerHTML = `
@@ -121,39 +125,39 @@ const ChatModal: React.FC<IChatModal> = ({ isOpen, onClose }) => {
     }
   }, [isOpen]);
 
-if (!isOpen) return null;
+  if (!isOpen) return null;
 
-return (
-  <div style={{
-    position: "fixed",
-    top: 0,
-    left: 0,
-    width: "100%",
-    height: "100%",
-    backgroundColor: "rgba(0,0,0,0.5)",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  }}>
+  return (
     <div style={{
-      backgroundColor: "white",
-      padding: "20px",
-      borderRadius: "8px",
-      width: "80%",
-      maxWidth: "600px",
+      position: "fixed",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      backgroundColor: "rgba(0,0,0,0.5)",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
     }}>
-      <button onClick={onClose} style={{ marginBottom: "10px" }}>Close</button>
-      <iframe
-        ref={iframeRef}
-        style={{
-          width: "100%",
-          height: "300px",
-          border: "1px solid #ccc",
-        }}
-      ></iframe>
+      <div style={{
+        backgroundColor: "white",
+        padding: "20px",
+        borderRadius: "8px",
+        width: "80%",
+        maxWidth: "600px",
+      }}>
+        <button onClick={onClose} style={{ marginBottom: "10px" }}>Close</button>
+        <iframe
+          ref={iframeRef}
+          style={{
+            width: "100%",
+            height: "300px",
+            border: "1px solid #ccc",
+          }}
+        ></iframe>
+      </div>
     </div>
-  </div>
-);
+  );
 
   //   return (
   //     <div className={styles.modalWrapper}>
