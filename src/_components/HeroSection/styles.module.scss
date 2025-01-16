@@ -1,10 +1,9 @@
 .wrapper {
   min-height: 100vh;
 
-  background-image: url('src/assets/images/bg.png');
+  background-image: url('src/assets/images/bg_hero.png');
   background-size: cover;
-  background-position-y: 50%;
-  background-position-x: calc(50% - 15px);
+  background-position: center;
   background-repeat: no-repeat;
 
   display: flex;
@@ -12,11 +11,7 @@
   align-items: center;
   justify-content: center;
 
-  gap: 48rem;
-
   @media (max-width: 768px) {
-    gap: 24rem;
-
     padding-top: 7rem;
   }
 
@@ -24,7 +19,6 @@
 
 .title {
   color: white;
-
   font-size: 8rem;
 
   @media (max-width: 998px) {

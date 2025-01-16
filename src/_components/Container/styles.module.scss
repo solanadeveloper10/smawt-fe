@@ -1,0 +1,52 @@
+.container {
+  width: 100%;
+  /* Take full width of the parent container */
+  max-width: 1200px;
+  /* Restrict width on larger screens */
+  margin: 0 auto;
+  /* Center horizontally */
+  padding: 0 16px;
+  /* Add horizontal padding for smaller screens */
+  box-sizing: border-box;
+  /* Include padding and border in the width */
+
+  /* Responsive adjustments */
+  @media (min-width: 576px) {
+    padding: 0 24px;
+    /* Increase padding for tablet devices */
+  }
+
+  @media (min-width: 768px) {
+    padding: 0 48px;
+    /* Further increase padding for larger tablets */
+  }
+
+  @media (min-width: 1400px) {
+    padding: 0;
+    /* Remove horizontal padding for desktops */
+  }
+}
+
+.containerWide {
+  width: 100%;
+  /* Take full width of the parent container */
+  // max-width: 1200px;
+  /* Restrict width on larger screens */
+  margin: 0 auto;
+  /* Center horizontally */
+  padding: 0 16px;
+  /* Add horizontal padding for smaller screens */
+  box-sizing: border-box;
+  /* Include padding and border in the width */
+
+  /* Responsive adjustments */
+  @media (min-width: 576px) {
+    padding: 0 24px;
+    /* Increase padding for tablet devices */
+  }
+
+  @media (min-width: 768px) {
+    padding: 0 48px;
+    /* Further increase padding for larger tablets */
+  }
+}

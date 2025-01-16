@@ -1,0 +1,22 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #222;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.movingPart {
+  display: inline-flex;
+  white-space: nowrap;
+
+  span {
+    color: white;
+    font-size: 2.75rem;
+    display: inline-block;
+    white-space: nowrap;
+    margin-right: 4ch;
+  }
+}

@@ -1,0 +1,90 @@
+.wrapper {
+  min-height: 100vh;
+
+  background-image: url('src/assets/images/bg_buy.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  margin-block: 4rem;
+  margin-bottom: 10rem;
+
+  @media (max-width: 992px) {
+    gap: 2rem;
+  }
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 400;
+
+  text-align: center;
+
+  @media (max-width: 576px) {
+    font-size: 3em;
+  }
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+
+  .card {
+    height: 530px;
+    width: 388px;
+
+    @media (max-width: 520px) {
+      width: 100%;
+    }
+  }
+}
+
+.socialsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+
+  .socialLink {
+    width: 100px;
+  }
+}
+
+.contractContainer {
+  background-color: #00000069;
+  border-radius: 51px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  color: white;
+
+  padding: 1rem;
+
+}
+
+.contractText {
+  font-size: 3.5rem;
+  font-weight: 400;
+  word-wrap: break-word;
+  text-align: center;
+
+  width: 100%;
+}

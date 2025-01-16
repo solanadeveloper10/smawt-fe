@@ -16,3 +16,16 @@ html, body {
   width: 100vw;
   overflow-x: hidden;
 }
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
