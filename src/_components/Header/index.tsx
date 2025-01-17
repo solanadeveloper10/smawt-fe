@@ -22,7 +22,8 @@ const Header = () => {
         </motion.a>
         <ul className={isMenuOpen ? `${styles.navLinks} ${styles.open}` : styles.navLinks}>
           <li>
-            <motion.a href="/"
+            <motion.a href="https://t.me/SmawtBob"
+              target='_blank'
               whileHover={{
                 scale: 1.1,
                 color: 'red',
@@ -30,15 +31,17 @@ const Header = () => {
             >Telegram</motion.a>
           </li>
           <li>
-            <motion.a href="/"
+            <motion.a href="https://x.com/SmawtBob"
+              target='_blank'
               whileHover={{
                 scale: 1.1,
                 color: 'red',
               }}
-            >Twitter</motion.a>
+            >X (Twitter)</motion.a>
           </li>
           <li>
-            <motion.a href="/"
+            <motion.a href="https://dexscreener.com/solana/bKegX6AzDjryfYhsLxhvXfUNz49rW5EDaRinmesmawt"
+              target='_blank'
               whileHover={{
                 scale: 1.1,
                 color: 'red',
@@ -46,7 +49,8 @@ const Header = () => {
             >Screener</motion.a>
           </li>
           <li>
-            <motion.a href="/"
+            <motion.a href="https://www.dextools.io/app/en/solana/pair-explorer/8xqGFEFGqE9F2CLoCXDoLnooKaPGsoxsymHx9YtCrg3W?t=1737118396945"
+              target='_blank'
               whileHover={{
                 scale: 1.1,
                 color: 'red',
@@ -54,7 +58,8 @@ const Header = () => {
             >Dextools</motion.a>
           </li>
           <li>
-            <motion.a href="/"
+            <motion.a href="https://raydium.io/swap/?inputMint=sol&outputMint=bKegX6AzDjryfYhsLxhvXfUNz49rW5EDaRinmesmawt"
+              target='_blank'
               whileHover={{
                 scale: 1.1,
                 color: 'red',

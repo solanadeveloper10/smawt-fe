@@ -50,13 +50,13 @@ const BuySection = () => {
         </div>
 
         <div className={styles.socialsContainer}>
-          <motion.a href="#" className={styles.socialLink}
+          <motion.a href="https://www.dextools.io/app/en/solana/pair-explorer/8xqGFEFGqE9F2CLoCXDoLnooKaPGsoxsymHx9YtCrg3W?t=1737118396945" target='_blank' className={styles.socialLink}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
             <img src="assets/icons/dextools.svg" alt="Dextools icon" />
           </motion.a>
-          <motion.a href="#" className={styles.socialLink}
+          <motion.a href="https://dexscreener.com/solana/bKegX6AzDjryfYhsLxhvXfUNz49rW5EDaRinmesmawt" target='_blank' className={styles.socialLink}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
