@@ -9,7 +9,7 @@ interface IAboutSection extends React.ComponentProps<"div"> {
 }
 
 const AboutSection: React.FC<IAboutSection> = (props) => {
-  const {onOpenChatBtnClick} = props
+  const { onOpenChatBtnClick } = props
 
   return (
     <section className={styles.wrapper}>
@@ -17,7 +17,12 @@ const AboutSection: React.FC<IAboutSection> = (props) => {
         <div className={styles.contentWrapper}>
           <div className={styles.textContainer}>
             <h2 className={styles.title}>About $SMAWT</h2>
-            <p className={styles.description}>smawt Bob along with his crew of super memes, petrols the city of solana, looking for coins worthy of joining the justice meme legue of billion dollar super heros</p>
+            <p className={styles.description}>Bob's gonna be $SMAWT. Bob dweem have best awtificial intelligence than all agents, his alweady have awtificial, now his just need intelligence! Hellp him to become beter.</p>
+          </div>
+
+          <div className={styles.arrowContainer}>
+            <div className={styles.arrowText}></div>
+            <div className={styles.arrowImg}></div>
           </div>
 
           <div className={styles.imageContainer}>

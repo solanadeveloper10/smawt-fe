@@ -24,6 +24,10 @@
     gap: 4rem;
     padding-block: 4rem;
   }
+
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .textContainer {
@@ -55,10 +59,6 @@
   display: flex;
   width: 30%;
 
-  @media (max-width: 1200px) {
-    width: 50%;
-  }
-
   @media (max-width: 768px) {
     width: 80%;
   }
@@ -69,5 +69,51 @@
 
   .characterImg {
     cursor: pointer;
+  }
+}
+
+.arrowContainer {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.5rem;
+
+  @media (max-width: 992px) {
+    position: static;
+
+    gap: 3rem;
+  }
+}
+
+.arrowText {
+  width: 150px;
+  height: 97px;
+
+  background-image: url('/assets/images/text_chat.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (max-width: 992px) {
+    width: 200px;
+    height: 129px;
+  }
+}
+
+.arrowImg {
+  width: 200px;
+  height: 120px;
+
+  background-image: url('/assets/images/arrow.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (max-width: 992px) {
+    transform: rotate(75deg);
   }
 }
