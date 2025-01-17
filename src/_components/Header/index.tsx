@@ -46,7 +46,7 @@ const Header = () => {
                 scale: 1.1,
                 color: 'red',
               }}
-            >Screener</motion.a>
+            >Dexscreener</motion.a>
           </li>
           <li>
             <motion.a href="https://www.dextools.io/app/en/solana/pair-explorer/8xqGFEFGqE9F2CLoCXDoLnooKaPGsoxsymHx9YtCrg3W?t=1737118396945"
