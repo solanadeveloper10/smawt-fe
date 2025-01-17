@@ -66,7 +66,7 @@ const BuySection = () => {
 
         <div className={styles.contractContainer}>
           <h3 className={styles.contractText}>
-            Ca:&nbsp;aueBoWMMKpZFfnkvArmADmeuXFYxDHVfYnigXiHpump
+            Ca:&nbsp;bKegX6AzDjryfYhsLxhvXfUNz49rW5EDaRinmesmawt
           </h3>
         </div>
       </Container>
