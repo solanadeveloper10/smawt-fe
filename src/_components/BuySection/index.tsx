@@ -8,19 +8,19 @@ import Container from '../Container'
 const cardsContent = [
   {
     title: 'Get some SOL',
-    iconSrc: 'public/assets/icons/solanaio.png',
+    iconSrc: 'assets/icons/solanaio.png',
     iconAlt: 'Solana logo',
     desc: 'Have SOL in your wallet to switch to $SMAWT. If you don’t have any SOL, you can buy directly on Phantom, transfer from another wallet, or buy on another exchange and send it to your wallet.',
   },
   {
     title: 'Connect to Raydium',
-    iconSrc: 'public/assets/icons/raydium.png',
+    iconSrc: 'assets/icons/raydium.png',
     iconAlt: 'Raydium logo',
     desc: 'Connect to Raydium. paste the contract address above into the search bar and find $SMAWT token',
   },
   {
     title: 'Swap to $SMAWT',
-    iconSrc: 'public/assets/icons/logo.png',
+    iconSrc: 'assets/icons/logo.png',
     iconAlt: 'SMAWT logo',
     desc: 'Switch SOL for $SMAWT. We have Zero taxes so you don’t need to worry about buying with a specific slippage.',
   }
