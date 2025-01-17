@@ -10,7 +10,9 @@ const Header = () => {
           whileHover={{
             scale: 1.1,
           }}
-        >Logo</motion.a>
+        >
+          <img src="assets/images/logo.png" alt="Smawt logo" className={styles.logo} />
+        </motion.a>
         <motion.a href="/"
           whileHover={{
             scale: 1.1,
