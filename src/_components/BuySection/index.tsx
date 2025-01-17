@@ -5,6 +5,27 @@ import styles from './styles.module.scss'
 import { MotionCard } from '../Card'
 import Container from '../Container'
 
+const cardsContent = [
+  {
+    title: 'Get some SOL',
+    iconSrc: 'public/assets/icons/solanaio.png',
+    iconAlt: 'Solana logo',
+    desc: 'Have SOL in your wallet to switch to $SMAWT. If you don’t have any SOL, you can buy directly on Phantom, transfer from another wallet, or buy on another exchange and send it to your wallet.',
+  },
+  {
+    title: 'Connect to Raydium',
+    iconSrc: 'public/assets/icons/raydium.png',
+    iconAlt: 'Raydium logo',
+    desc: 'Connect to Raydium. paste the contract address above into the search bar and find $SMAWT token',
+  },
+  {
+    title: 'Swap to $SMAWT',
+    iconSrc: 'public/assets/icons/logo.png',
+    iconAlt: 'SMAWT logo',
+    desc: 'Switch SOL for $SMAWT. We have Zero taxes so you don’t need to worry about buying with a specific slippage.',
+  }
+]
+
 const BuySection = () => {
   return (
     <section className={styles.wrapper}>
@@ -12,24 +33,20 @@ const BuySection = () => {
         <h2 className={styles.title}>How to buy</h2>
 
         <div className={styles.cardsContainer}>
-          <MotionCard className={styles.card}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <h3>Nigga</h3>
-          </MotionCard>
-          <MotionCard className={styles.card}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <h3>Nigga</h3>
-          </MotionCard>
-          <MotionCard className={styles.card}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <h3>Nigga</h3>
-          </MotionCard>
+          {cardsContent.map((el, index) => (
+            <MotionCard className={styles.card}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <div className={styles.cardHeader}>
+                <img className={styles.cardIcon} src={el.iconSrc} alt={el.iconAlt} />
+                <h3 className={styles.cardTitle}>{index + 1}. {el.title}</h3>
+              </div>
+              <p className={styles.cardDescription}>{el.desc}</p>
+            </MotionCard>
+
+          ))}
+
         </div>
 
         <div className={styles.socialsContainer}>

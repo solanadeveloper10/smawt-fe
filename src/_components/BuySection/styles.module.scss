@@ -56,6 +56,33 @@
   }
 }
 
+.cardHeader {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  align-items: center;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+
+  font-weight: 400;
+}
+
+.cardIcon {
+  width: 50px;
+  height: auto;
+
+  border-radius: 50%;
+}
+
+.cardDescription {
+  font-size: 1.5rem;
+
+  font-weight: 400;
+}
+
 .socialsContainer {
   display: flex;
   justify-content: center;

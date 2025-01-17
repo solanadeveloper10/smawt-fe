@@ -6,30 +6,43 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  top: 0;
+  left: 0;
 
   @media (max-width: 768px) {
     padding-top: 7rem;
   }
-
 }
 
 .title {
   color: white;
   font-size: 8rem;
 
-  @media (max-width: 998px) {
-    font-size: 3rem;
+  -webkit-text-stroke: 2px black;
+
+  @media (max-width: 580px) {
+    font-size: 4rem;
   }
 }
 
 .heroBtn {
   background-color: #fff52e;
-  border-radius: 12px;
-  padding-inline: 20px;
+  border-radius: 40px;
+  padding-inline: 2rem;
 
-  font-size: 3rem;
+  font-size: 4rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 72%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
 }
