@@ -37,13 +37,13 @@ const BuySection = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <img src="src\assets\icons\dextools.svg" alt="Dextools icon" />
+            <img src="assets/icons/dextools.svg" alt="Dextools icon" />
           </motion.a>
           <motion.a href="#" className={styles.socialLink}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <img src="src\assets\icons\dex_screener_tranparent_bg.png" alt="Dexscreener icon" />
+            <img src="assets/icons/dex_screener_tranparent_bg.png" alt="Dexscreener icon" />
           </motion.a>
         </div>
 

@@ -4,7 +4,13 @@ import styles from './styles.module.scss'
 
 import Container from '../Container'
 
-const AboutSection = () => {
+interface IAboutSection extends React.ComponentProps<"div"> {
+  onOpenChatBtnClick: () => void
+}
+
+const AboutSection: React.FC<IAboutSection> = (props) => {
+  const {onOpenChatBtnClick} = props
+
   return (
     <section className={styles.wrapper}>
       <Container className={styles.container}>
@@ -15,10 +21,11 @@ const AboutSection = () => {
           </div>
 
           <div className={styles.imageContainer}>
-            <motion.img src="src\assets\images\bob_glasses.png" alt="Smawt Bob in glasses"
+            <motion.img src="assets/images/bob_glasses.png" alt="Smawt Bob in glasses"
               whileHover={{ scale: 1.1, rotate: 10 }}
               whileTap={{ scale: 0.9, rotate: 10 }}
               className={styles.characterImg}
+              onClick={onOpenChatBtnClick}
             />
           </div>
         </div>

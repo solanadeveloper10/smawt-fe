@@ -1,13 +1,16 @@
-import { useEffect, useRef } from 'react';
+import { forwardRef, useEffect, useRef } from 'react';
+import { AnimatePresence, motion } from 'motion/react';
 
-// import styles from './styles.module.scss'
+import styles from './styles.module.scss'
 
-interface IChatModal {
+interface IChatModal extends React.ComponentProps<"div"> {
   isOpen: boolean
   onClose: () => void
 }
 
-const ChatModal: React.FC<IChatModal> = ({ isOpen, onClose }) => {
+const ChatModal: React.FC<IChatModal> = forwardRef((props, ref) => {
+  const { isOpen, onClose } = props
+
   const iframeRef = useRef<HTMLIFrameElement>(null);
 
   useEffect(() => {
@@ -125,53 +128,40 @@ const ChatModal: React.FC<IChatModal> = ({ isOpen, onClose }) => {
     }
   }, [isOpen]);
 
-  if (!isOpen) return null;
+  return (<AnimatePresence initial={false}>
+    {isOpen ?
+      (
+        <motion.div
+          ref={ref}
+          className={styles.modalWrapper}
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1, transition: { duration: 0.2 } }}
+          exit={{ opacity: 0, scale: 0 }}
+          key="box"
+        >
+          <div style={{
+            backgroundColor: "white",
+            padding: "20px",
+            borderRadius: "8px",
+            width: "80%",
+            maxWidth: "600px",
+          }}>
+            <button onClick={onClose} style={{ marginBottom: "10px" }}>Close</button>
+            <iframe
+              ref={iframeRef}
+              style={{
+                width: "100%",
+                height: "300px",
+                border: "1px solid #ccc",
+              }}
+            ></iframe>
+          </div>
+        </motion.div>)
+      : null}
+  </AnimatePresence>
+  )
+})
 
-  return (
-    <div style={{
-      position: "fixed",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-      backgroundColor: "rgba(0,0,0,0.5)",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-    }}>
-      <div style={{
-        backgroundColor: "white",
-        padding: "20px",
-        borderRadius: "8px",
-        width: "80%",
-        maxWidth: "600px",
-      }}>
-        <button onClick={onClose} style={{ marginBottom: "10px" }}>Close</button>
-        <iframe
-          ref={iframeRef}
-          style={{
-            width: "100%",
-            height: "300px",
-            border: "1px solid #ccc",
-          }}
-        ></iframe>
-      </div>
-    </div>
-  );
-
-  //   return (
-  //     <div className={styles.modalWrapper}>
-  //       <div className={styles.modal}>
-  //         <div className={styles.chatHistory} id='chat-history'>
-
-  //         </div>
-  //         <div>
-  //           <input id="user-input" type="text" />
-  //           <button id='send-button'>Send</button>
-  //         </div>
-  //       </div>
-  //     </div>
-  //   )
-}
+// export const MotionChatModal = motion(ChatModal);
 
 export default ChatModal
