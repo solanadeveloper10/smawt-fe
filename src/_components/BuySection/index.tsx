@@ -50,7 +50,7 @@ const BuySection = () => {
         </div>
 
         <div className={styles.socialsContainer}>
-          <motion.a href="https://www.dextools.io/app/en/solana/pair-explorer/8xqGFEFGqE9F2CLoCXDoLnooKaPGsoxsymHx9YtCrg3W?t=1737118396945" target='_blank' className={styles.socialLink}
+          <motion.a href="https://www.dextools.io/app/en/solana/pair-explorer/dLComYLn2sTQZTTQHyWeL6cdkPLsYyzSYrQmWxUpump=1746984311637" target='_blank' className={styles.socialLink}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >

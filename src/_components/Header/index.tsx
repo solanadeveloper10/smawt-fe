@@ -49,7 +49,7 @@ const Header = () => {
             >Dexscreener</motion.a>
           </li>
           <li>
-            <motion.a href="https://www.dextools.io/app/en/solana/pair-explorer/8xqGFEFGqE9F2CLoCXDoLnooKaPGsoxsymHx9YtCrg3W?t=1737118396945"
+            <motion.a href="https://www.dextools.io/app/en/solana/pair-explorer/dLComYLn2sTQZTTQHyWeL6cdkPLsYyzSYrQmWxUpump=1746984311637"
               target='_blank'
               whileHover={{
                 scale: 1.1,
