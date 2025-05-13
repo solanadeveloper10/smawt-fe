@@ -10,19 +10,19 @@ const cardsContent = [
     title: 'Get some SOL',
     iconSrc: 'assets/icons/solanaio.png',
     iconAlt: 'Solana logo',
-    desc: 'Have SOL in your wallet to switch to $SMAWT. If you don’t have any SOL, you can buy directly on Phantom, transfer from another wallet, or buy on another exchange and send it to your wallet.',
+    desc: 'Have SOL in your wallet to switch to $DUMB. If you don’t have any SOL, you can buy directly on Phantom, transfer from another wallet, or buy on another exchange and send it to your wallet.',
   },
   {
     title: 'Connect to Raydium',
     iconSrc: 'assets/icons/raydium.png',
     iconAlt: 'Raydium logo',
-    desc: 'Connect to Raydium. paste the contract address above into the search bar and find $SMAWT token',
+    desc: 'Connect to Raydium. paste the contract address above into the search bar and find $DUMB token',
   },
   {
-    title: 'Swap to $SMAWT',
+    title: 'Swap to $DUMB',
     iconSrc: 'assets/icons/logo.png',
     iconAlt: 'SMAWT logo',
-    desc: 'Switch SOL for $SMAWT. We have Zero taxes so you don’t need to worry about buying with a specific slippage.',
+    desc: 'Switch SOL for $DUMB. We have Zero taxes so you don’t need to worry about buying with a specific slippage.',
   }
 ]
 

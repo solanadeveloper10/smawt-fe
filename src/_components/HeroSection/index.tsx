@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section className={styles.wrapper}>
       <div className={styles.container}>
-        <h1 className={styles.title}>$SMAWT</h1>
+        <h1 className={styles.title}>$DUMB</h1>
         <MotionButton
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}

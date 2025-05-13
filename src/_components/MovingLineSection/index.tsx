@@ -2,7 +2,7 @@ import { motion } from "motion/react"
 
 import styles from './styles.module.scss'
 
-const WORD = '$SMAWT'
+const WORD = '$DUMB'
 
 interface IMovingLineSection {
   bgColor: string
