@@ -5,7 +5,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import styles from './styles.module.scss'
 import { MotionButton } from '../Button';
 
-const backendUrl = 'https://aichat-backend-79ip.onrender.com/chat';
+const backendUrl = 'https://backend-new-0pm8.onrender.com/chat';
 
 const ChatComponent = ({ setIsChatOpen }) => {
    const [message, setMessage] = useState('');
