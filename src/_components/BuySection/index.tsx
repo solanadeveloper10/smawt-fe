@@ -13,10 +13,10 @@ const cardsContent = [
     desc: 'Have SOL in your wallet to switch to $DUMB. If you don’t have any SOL, you can buy directly on Phantom, transfer from another wallet, or buy on another exchange and send it to your wallet.',
   },
   {
-    title: 'Connect to Raydium',
+    title: 'Connect to Pump Swap',
     iconSrc: 'assets/icons/raydium.png',
     iconAlt: 'Raydium logo',
-    desc: 'Connect to Raydium. paste the contract address above into the search bar and find $DUMB token',
+    desc: 'Connect to Pump Swap. paste the contract address above into the search bar and find $DUMB token',
   },
   {
     title: 'Swap to $DUMB',
@@ -56,7 +56,7 @@ const BuySection = () => {
           >
             <img src="assets/icons/dextools.svg" alt="Dextools icon" />
           </motion.a>
-          <motion.a href="https://dexscreener.com/solana/bKegX6AzDjryfYhsLxhvXfUNz49rW5EDaRinmesmawt" target='_blank' className={styles.socialLink}
+          <motion.a href="https://dexscreener.com/solana/dLComYLn2sTQZTTQHyWeL6cdkPLsYyzSYrQmWxUpump" target='_blank' className={styles.socialLink}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -66,7 +66,7 @@ const BuySection = () => {
 
         <div className={styles.contractContainer}>
           <h3 className={styles.contractText}>
-            Ca:&nbsp;bKegX6AzDjryfYhsLxhvXfUNz49rW5EDaRinmesmawt
+            Ca:&nbsp;dLComYLn2sTQZTTQHyWeL6cdkPLsYyzSYrQmWxUpump
           </h3>
         </div>
       </Container>

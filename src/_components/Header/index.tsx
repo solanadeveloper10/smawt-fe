@@ -22,7 +22,7 @@ const Header = () => {
         </motion.a>
         <ul className={isMenuOpen ? `${styles.navLinks} ${styles.open}` : styles.navLinks}>
           <li>
-            <motion.a href="https://t.me/SmawtBob"
+            <motion.a href="https://t.me/DumbBobPortal"
               target='_blank'
               whileHover={{
                 scale: 1.1,
@@ -31,7 +31,7 @@ const Header = () => {
             >Telegram</motion.a>
           </li>
           <li>
-            <motion.a href="https://x.com/SmawtBob"
+            <motion.a href="https://x.com/DumbBobfun"
               target='_blank'
               whileHover={{
                 scale: 1.1,
@@ -40,7 +40,7 @@ const Header = () => {
             >X (Twitter)</motion.a>
           </li>
           <li>
-            <motion.a href="https://dexscreener.com/solana/bKegX6AzDjryfYhsLxhvXfUNz49rW5EDaRinmesmawt"
+            <motion.a href="https://dexscreener.com/solana/dLComYLn2sTQZTTQHyWeL6cdkPLsYyzSYrQmWxUpump"
               target='_blank'
               whileHover={{
                 scale: 1.1,
@@ -58,7 +58,7 @@ const Header = () => {
             >Dextools</motion.a>
           </li>
           <li>
-            <motion.a href="https://raydium.io/swap/?inputMint=sol&outputMint=bKegX6AzDjryfYhsLxhvXfUNz49rW5EDaRinmesmawt"
+            <motion.a href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=dLComYLn2sTQZTTQHyWeL6cdkPLsYyzSYrQmWxUpump"
               target='_blank'
               whileHover={{
                 scale: 1.1,

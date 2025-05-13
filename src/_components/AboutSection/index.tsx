@@ -17,7 +17,7 @@ const AboutSection: React.FC<IAboutSection> = (props) => {
         <div className={styles.contentWrapper}>
           <div className={styles.textContainer}>
             <h2 className={styles.title}>About $DUMB</h2>
-            <p className={styles.description}>I'm gonna be $DUMB. My dweem have best awtificial intelligence than all agents, I alweady have awtificial, now I just need intelligence! Hellp me to become beter.</p>
+            <p className={styles.description}>I'm $DUMB Bob. My dweem have best awtificial intelligence than all agents, I alweady have awtificial, now I just need intelligence! Hellp me to become beter.</p>
           </div>
 
           <div className={styles.arrowContainer}>

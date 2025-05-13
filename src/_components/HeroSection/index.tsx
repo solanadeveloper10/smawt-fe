@@ -10,7 +10,7 @@ const HeroSection = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           className={styles.heroBtn}>
-          <a href="https://raydium.io/swap/?inputMint=sol&outputMint=bKegX6AzDjryfYhsLxhvXfUNz49rW5EDaRinmesmawt" target='_blank'>BUY</a>
+          <a href="https://raydium.io/swap/?inputMint=sol&outputMint=dLComYLn2sTQZTTQHyWeL6cdkPLsYyzSYrQmWxUpump" target='_blank'>BUY</a>
         </MotionButton>
       </div>
     </section>
