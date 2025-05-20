@@ -1,30 +1,30 @@
-import { motion } from 'motion/react'
+import { motion } from "motion/react";
 
-import styles from './styles.module.scss'
+import styles from "./styles.module.scss";
 
-import { MotionCard } from '../Card'
-import Container from '../Container'
+import { MotionCard } from "../Card";
+import Container from "../Container";
 
 const cardsContent = [
   {
-    title: 'Get some SOL',
-    iconSrc: 'assets/icons/solanaio.png',
-    iconAlt: 'Solana logo',
-    desc: 'Have SOL in your wallet to switch to $DUMB. If you don’t have any SOL, you can buy directly on Phantom, transfer from another wallet, or buy on another exchange and send it to your wallet.',
+    title: "Get some SOL",
+    iconSrc: "assets/icons/solanaio.png",
+    iconAlt: "Solana logo",
+    desc: "Have SOL in your wallet to switch to $HODLER. If you don’t have any SOL, you can buy directly on Phantom, transfer from another wallet, or buy on another exchange and send it to your wallet.",
   },
   {
-    title: 'Connect to Pump Swap',
-    iconSrc: 'assets/icons/raydium.png',
-    iconAlt: 'Raydium logo',
-    desc: 'Connect to Pump Swap. paste the contract address above into the search bar and find $DUMB token',
+    title: "Connect to Pump Swap",
+    iconSrc: "assets/icons/raydium.png",
+    iconAlt: "Raydium logo",
+    desc: "Connect to Pump Swap. paste the contract address above into the search bar and find $HODLER token",
   },
   {
-    title: 'Swap to $DUMB',
-    iconSrc: 'assets/icons/logo.png',
-    iconAlt: 'SMAWT logo',
-    desc: 'Switch SOL for $DUMB. We have Zero taxes so you don’t need to worry about buying with a specific slippage.',
-  }
-]
+    title: "Swap to $HODLER",
+    iconSrc: "assets/icons/logo.png",
+    iconAlt: "SMAWT logo",
+    desc: "Switch SOL for $HODLER. We have Zero taxes so you don’t need to worry about buying with a specific slippage.",
+  },
+];
 
 const BuySection = () => {
   return (
@@ -34,33 +34,47 @@ const BuySection = () => {
 
         <div className={styles.cardsContainer}>
           {cardsContent.map((el, index) => (
-            <MotionCard className={styles.card}
+            <MotionCard
+              className={styles.card}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               <div className={styles.cardHeader}>
-                <img className={styles.cardIcon} src={el.iconSrc} alt={el.iconAlt} />
-                <h3 className={styles.cardTitle}>{index + 1}. {el.title}</h3>
+                <img
+                  className={styles.cardIcon}
+                  src={el.iconSrc}
+                  alt={el.iconAlt}
+                />
+                <h3 className={styles.cardTitle}>
+                  {index + 1}. {el.title}
+                </h3>
               </div>
               <p className={styles.cardDescription}>{el.desc}</p>
             </MotionCard>
-
           ))}
-
         </div>
 
         <div className={styles.socialsContainer}>
-          <motion.a href="https://www.dextools.io/app/en/solana/pair-explorer/Dao1bmFUycyHmR3CEqC6ebCBxgncYm5mwLb5doWgGZzG?t=1747173123220" target='_blank' className={styles.socialLink}
+          <motion.a
+            href='https://www.dextools.io/app/en/solana/pair-explorer/Dao1bmFUycyHmR3CEqC6ebCBxgncYm5mwLb5doWgGZzG?t=1747173123220'
+            target='_blank'
+            className={styles.socialLink}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <img src="assets/icons/dextools.svg" alt="Dextools icon" />
+            <img src='assets/icons/dextools.svg' alt='Dextools icon' />
           </motion.a>
-          <motion.a href="https://dexscreener.com/solana/dLComYLn2sTQZTTQHyWeL6cdkPLsYyzSYrQmWxUpump" target='_blank' className={styles.socialLink}
+          <motion.a
+            href='https://dexscreener.com/solana/dLComYLn2sTQZTTQHyWeL6cdkPLsYyzSYrQmWxUpump'
+            target='_blank'
+            className={styles.socialLink}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <img src="assets/icons/dex_screener_tranparent_bg.png" alt="Dexscreener icon" />
+            <img
+              src='assets/icons/dex_screener_tranparent_bg.png'
+              alt='Dexscreener icon'
+            />
           </motion.a>
         </div>
 
@@ -70,8 +84,8 @@ const BuySection = () => {
           </h3>
         </div>
       </Container>
-    </section >
-  )
-}
+    </section>
+  );
+};
 
-export default BuySection
+export default BuySection;

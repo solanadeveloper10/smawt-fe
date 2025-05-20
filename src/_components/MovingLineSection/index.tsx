@@ -1,21 +1,21 @@
-import { motion } from "motion/react"
+import { motion } from "motion/react";
 
-import styles from './styles.module.scss'
+import styles from "./styles.module.scss";
 
-const WORD = '$DUMB'
+const WORD = "$HODLER";
 
 interface IMovingLineSection {
-  bgColor: string
+  bgColor: string;
 }
 
 const MovingLineSection: React.FC<IMovingLineSection> = (props) => {
-  const {bgColor = '#5c5c5c'} = props
+  const { bgColor = "#5c5c5c" } = props;
 
   return (
     <div className={styles.wrapper}>
       <motion.div
         className={styles.movingPart}
-        style={{backgroundColor: bgColor}}
+        style={{ backgroundColor: bgColor }}
         animate={{ x: ["0%", "-50%"] }}
         transition={{
           repeat: Infinity,
@@ -23,23 +23,19 @@ const MovingLineSection: React.FC<IMovingLineSection> = (props) => {
           ease: "linear",
         }}
       >
-        <div>{
-          Array.from({ length: 20 })
-            .map((_, index) => (
-              <span key={index}>{WORD}</span>
-            )
-            )
-        }</div>
-        <div>{
-          Array.from({ length: 20 })
-            .map((_, index) => (
-              <span key={index}>{WORD}</span>
-            )
-            )
-        }</div>
+        <div>
+          {Array.from({ length: 20 }).map((_, index) => (
+            <span key={index}>{WORD}</span>
+          ))}
+        </div>
+        <div>
+          {Array.from({ length: 20 }).map((_, index) => (
+            <span key={index}>{WORD}</span>
+          ))}
+        </div>
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default MovingLineSection
+export default MovingLineSection;

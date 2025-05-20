@@ -1,23 +1,26 @@
-import { motion } from 'motion/react'
+import { motion } from "motion/react";
 
-import styles from './styles.module.scss'
+import styles from "./styles.module.scss";
 
-import Container from '../Container'
+import Container from "../Container";
 
 interface IAboutSection extends React.ComponentProps<"div"> {
-  onOpenChatBtnClick: () => void
+  onOpenChatBtnClick: () => void;
 }
 
 const AboutSection: React.FC<IAboutSection> = (props) => {
-  const { onOpenChatBtnClick } = props
+  const { onOpenChatBtnClick } = props;
 
   return (
     <section className={styles.wrapper}>
       <Container className={styles.container}>
         <div className={styles.contentWrapper}>
           <div className={styles.textContainer}>
-            <h2 className={styles.title}>About $DUMB</h2>
-            <p className={styles.description}>I'm $DUMB Bob. My dweem have best awtificial intelligence than all agents, I alweady have awtificial, now I just need intelligence! Hellp me to become beter.</p>
+            <h2 className={styles.title}>About $HODLER</h2>
+            <p className={styles.description}>
+              Bob is vewy smawt, he got AI whic helped him buy and hodle
+              Bitcoin. Can you do the same with your intellect?
+            </p>
           </div>
 
           <div className={styles.arrowContainer}>
@@ -26,7 +29,9 @@ const AboutSection: React.FC<IAboutSection> = (props) => {
           </div>
 
           <div className={styles.imageContainer}>
-            <motion.img src="assets/images/bob_glasses.png" alt="Smawt Bob in glasses"
+            <motion.img
+              src='assets/images/bob_glasses.png'
+              alt='Smawt Bob in glasses'
               whileHover={{ scale: 1.1, rotate: 10 }}
               whileTap={{ scale: 0.9, rotate: 10 }}
               className={styles.characterImg}
@@ -36,7 +41,7 @@ const AboutSection: React.FC<IAboutSection> = (props) => {
         </div>
       </Container>
     </section>
-  )
-}
+  );
+};
 
-export default AboutSection
+export default AboutSection;
